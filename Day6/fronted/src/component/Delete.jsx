@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 
 const Delete=()=>{
+  
     const handledelete =async(e)=>{
         e.preventDefault()
         const id = e.target.id.value;

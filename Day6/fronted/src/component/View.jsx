@@ -5,7 +5,7 @@ const View = () => {
     const [users,setUsers]=useState([]);
     useEffect(() => {
         handleview();
-    },[])
+    },[users])
     const handleview= async () => {
         const res=await axios.get('https://fsd-backend-elyx.onrender.com/users');
         setUsers(res.data);
