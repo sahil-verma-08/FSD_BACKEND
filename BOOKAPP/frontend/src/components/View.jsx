@@ -8,7 +8,7 @@ const View = () => {
 
   const handeleview =async()=>{
     try{
-    const res= await axios.get("http://localhost:9000/books");
+    const res= await axios.get("https://bookapp-9ltb.onrender.com/books");
     setBooks(res.data)
     console.log(Books)
     }catch(error){
